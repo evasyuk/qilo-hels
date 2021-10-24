@@ -1,0 +1,33 @@
+{
+  "welcome": {
+    "title": "Quiz",
+    "start": "Start quiz"
+  },
+  "wizard": {
+    "header": "Step {{step}} of {{all}}",
+    "headerFake": "Step 1 of 2"
+  },
+  "summary": {
+    "header": "Summary"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language"
+  },
+  "common": {
+    "currentLanguage": "The current language is English",
+    "language": "English",
+    "English": "English",
+    "en": "English",
+    "Lithuanian": "Lithuanian",
+    "lt": "Lithuanian",
+    "changeLanguage": "Change language",
+    "back": "Back"
+  },
+  "demo": {
+    "Step One": "Step One",
+    "See Your Changes": "See Your Changes",
+    "Debug": "Debug",
+    "Locale": "Locale"
+  }
+}

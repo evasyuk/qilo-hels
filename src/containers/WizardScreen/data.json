@@ -1,0 +1,163 @@
+{
+  "questions": [
+    {
+      "type": "single",
+      "options": [
+        {
+          "label": "Losing Weight",
+          "value": "losing_weight"
+        },
+        {
+          "label": "Improve specific body areas",
+          "value": "improve_specific_body_areas"
+        },
+        {
+          "label": "Gain Muscle",
+          "value": "gain_muscle"
+        },
+        {
+          "label": "Develop Healthy Habits",
+          "value": "develop_healthy_habits"
+        }
+      ],
+      "label": "What is your primary goal?",
+      "key": "primary_goal"
+    },
+    {
+      "type": "multiple",
+      "options": [
+        {
+          "label": "Breast form",
+          "value": "breast_form",
+          "custom": {
+            "icon": "breast",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Arms",
+          "value": "arms",
+          "custom": {
+            "icon": "arms",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Belly",
+          "value": "belly",
+          "custom": {
+            "icon": "belly",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Buttocks",
+          "value": "buttocks",
+          "custom": {
+            "icon": "buttocks",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Legs and Thighs",
+          "value": "legs_and_thighs",
+          "custom": {
+            "icon": "legs",
+            "iconSize": 64
+          }
+        }
+      ],
+      "label": "Select body areas you would like to improve:",
+      "description": "Select all that apply.",
+      "key": "body_areas"
+    }
+  ],
+  "answers": {
+    "0": "gain_muscle",
+    "1": {
+      "losing_weight": true,
+      "gain_muscle": false
+    }
+  },
+  "currentQuestionIndex": 0,
+  "dataToRender": [
+    {
+      "index": 0,
+      "type": "single",
+      "options": [
+        {
+          "label": "Losing Weight",
+          "value": "losing_weight"
+        },
+        {
+          "label": "Improve specific body areas",
+          "value": "improve_specific_body_areas"
+        },
+        {
+          "label": "Gain Muscle",
+          "value": "gain_muscle"
+        },
+        {
+          "label": "Develop Healthy Habits",
+          "value": "develop_healthy_habits"
+        }
+      ],
+      "label": "What is your primary goal?",
+      "key": "primary_goal",
+      "activatedOption": null,
+      "activatedOptions": null
+    },
+    {
+      "index": 1,
+      "type": "multiple",
+      "options": [
+        {
+          "label": "Breast form",
+          "value": "breast_form",
+          "custom": {
+            "icon": "breast",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Arms",
+          "value": "arms",
+          "custom": {
+            "icon": "arms",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Belly",
+          "value": "belly",
+          "custom": {
+            "icon": "belly",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Buttocks",
+          "value": "buttocks",
+          "custom": {
+            "icon": "buttocks",
+            "iconSize": 64
+          }
+        },
+        {
+          "label": "Legs and Thighs",
+          "value": "legs_and_thighs",
+          "custom": {
+            "icon": "legs",
+            "iconSize": 64
+          }
+        }
+      ],
+      "label": "Select body areas you would like to improve:",
+      "description": "Select all that apply.",
+      "key": "body_areas",
+      "activatedOptions": {
+
+      }
+    }
+  ]
+}

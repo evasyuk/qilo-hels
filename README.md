@@ -136,7 +136,6 @@ yarn android
 
 ## Additional resources
 
-- [READ Kilo.Health React/JSX style guide](STYLE_GUIDE_DOC.md)
 - [Painless React Native Setup for Mac](https://shift.infinite.red/painless-react-native-setup-for-mac-windows-linux-956c23d2abf9)
 - [Fastlane setup](https://carloscuesta.me/blog/shipping-react-native-apps-with-fastlane/)
 

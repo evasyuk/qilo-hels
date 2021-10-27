@@ -1,55 +1,33 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es2020",
-    "baseUrl": "./",
-    "plugins": [
-      {
-        "name": "typescript-styled-plugin",
-        "lint": {
-          "validProperties": [
-            "aspect-ratio",
-            "border-bottom-end-radius",
-            "border-bottom-start-radius",
-            "elevation",
-            "margin-horizontal",
-            "margin-vertical",
-            "padding-horizontal",
-            "padding-vertical",
-            "resize-mode",
-            "shadow-color",
-            "shadow-offset",
-            "shadow-opacity",
-            "shadow-radius",
-            "tint-color"
-          ]
-        }
-      }
-    ],
-    "paths": {
-      "@api/*": ["src/api/*"],
-      "@assets/*": ["src/assets/*"],
-      "@containers/*": ["src/containers/*"],
-      "@constants/*": ["src/constants/*"],
-      "@components/*": ["src/components/*"],
-      "@config": ["./src/config"],
-      "@routes/*": ["src/routes/*"],
-      "@state/*": ["src/state/*"],
-      "@utils/*": ["src/utils/*"],
-      "@typings/*": ["src/types/*"]
-    },
-    "jsx": "react",
-    "strict": false,
-    "types": [],
-    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
     "resolveJsonModule": true,
-    "allowJs": true,
-    "checkJs": false
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noUnusedParameters": true,
+    "baseUrl": "./",
+    "paths": {
+      "@asdfq/*": [
+        "modules/*",
+        "packages/*"
+      ]
+    },
+    "typeRoots": ["@asdfq/types", "./vendor/types"]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"],
-  "files": ["src/modules.d.ts"]
+  "exclude": [
+    "node_modules",
+    "*/**/__tests__",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.e2e.ts",
+  ]
 }

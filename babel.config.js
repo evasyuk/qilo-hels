@@ -1,24 +1,25 @@
-module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
-  plugins: [
-    'react-native-reanimated/plugin',
-    'transform-inline-environment-variables',
-    [
-      'module-resolver',
-      {
-        alias: {
-          '@api': './src/api',
-          '@assets': './src/assets',
-          '@components': './src/components',
-          '@containers': './src/containers',
-          '@config': './src/config',
-          '@constants': './src/constants',
-          '@routes': './src/routes',
-          '@state': './src/state',
-          '@utils': './src/utils',
-          '@typings': './src/types',
+module.exports = function (api) {
+  api.cache(true)
+  return {
+    presets: [['module:metro-react-native-babel-preset', { useTransformReactJSXExperimental: true }]],
+    plugins: [
+      [
+        'module-resolver',
+        {
+          root: ['./'],
+          extensions: ['.js', '.jsx', '.tsx', '.ts'],
+          alias: {
+            '@asdfq': ['modules', 'packages'],
+          },
         },
-      },
+      ],
+      [
+        '@babel/plugin-transform-react-jsx',
+        {
+          runtime: 'automatic',
+        },
+      ],
+      'react-native-reanimated/plugin',
     ],
-  ],
-};
+  }
+}
